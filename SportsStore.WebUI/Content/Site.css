@@ -1,0 +1,270 @@
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/***********  Manually Added Styles Below ****************/
+
+
+body
+{
+    font-family: 'Times New Roman' , Times, serif;
+    margin: 0px;
+}
+
+h2 
+{
+    margin-top: 0.3em;    
+}
+
+tfoot td 
+{
+    border-top: dotted 1px gray;
+    font-weight: bold;   
+}
+
+div#header
+{
+    background-color: #444;
+    border-bottom: 2px solid #111;
+    color: white;
+}
+
+div#header div.title
+{
+    font-size: 2em;
+    padding: .6em;
+}
+
+div#content
+{
+    border-left-style: solid;
+    border-left-color: gray;
+    margin-left: 9em;
+    padding-left: 1em;
+}
+
+
+div.item
+{
+    border-top: 1px dotted gray;
+    padding-top: .7em;
+    margin-bottom: .7em;
+}
+
+div.item:first-child
+{
+    border-top: none;
+    padding-top: 0;
+}
+
+div.item h3 
+{
+    font-size: 1.3em;
+    margin: 0 0 .25em 0;    
+}
+
+div.item h4 
+{
+    font-size: 1.1em;
+    margin: .4em 0 0 0;    
+}
+
+/*** pager  ****/
+
+div.pager
+{
+    text-align: right;
+    border-top: 2px solid silver;
+    padding: .5em 0 0 0;
+    margin-top: 1em;
+}
+
+div.pager A
+{
+    font-size: 1.1em;
+    color: #666;
+    /*remove underscore from hyperlink with text decoration = none  */
+    text-decoration: none;
+    padding: 0 .4em 0 .4em;
+}
+
+div.pager A:hover
+{
+    background-color: Silver;
+}
+
+div.pager A.selected
+{
+    background-color: #353535;
+    color: white;
+}
+
+/*** categories  ****/
+
+div#categories
+{
+    float: left;
+    width: 8em;
+    padding: .3em; 
+}
+
+div#categories A
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-decoration: none;
+    padding: .6em;
+    color: Black;
+    border-bottom: solid 1px silver;
+}
+
+div#categories A:hover
+{
+    background-color: #CCC;
+}
+
+
+div#categories A.selected
+{
+    background-color: #666;
+    color: white;
+}
+
+
+div#categories A.selected:hover
+{
+    background-color: #666;
+}
+
+/****** FROMs ****/
+
+form 
+{
+    margin: 0;
+    padding: 0;    
+}
+
+div.item form 
+{
+    float: right;    
+}
+
+div.item input
+{
+    color: white;
+    background-color: #333;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+/*********** action buttons ***************/
+.actionButtons A, input.actionButtons
+{
+    font: .8em Ariel;
+    color: white;
+    margin: 5em;
+    text-decoration: none;
+    padding: .15em 1.5em .2em 1.5em;
+    background-color: #352525;
+    border: 1px solid black;
+/*    cursor: pointer; */
+   
+}
+
+/***** Cart Summary *****/
+
+div#cart
+{
+    float: right;
+    margin: .8em;
+    padding: 1em .5em 1em .5em;
+    background-color: #555;
+    color:silver;
+}
+
+div#cart A 
+{
+    text-decoration: none;
+    color: white;
+    margin-left: .5em;
+    padding: .4em 1em .4em 1em;
+    background-color: #333;
+    border: 1px solid black;
+}
+
+

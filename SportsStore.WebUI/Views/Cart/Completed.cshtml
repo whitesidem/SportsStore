@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Confirmation</h2>
+Thanks @ViewBag.ShippedToName
+<div>
+You have been charged @TempData.Peek("cartTotal")
+</div>
+
+@section CartSummary
+{
+@*    Nothing here - this replaces te default Basket option 
+*@
+}

@@ -1,0 +1,43 @@
+﻿@model SportStore.Domain.Entities.ShippingDetails
+
+@{
+    ViewBag.Title = "SportStore: Checkout";
+}
+
+<h2>Check out now</h2>
+Please enter your details, and we'll ship your goods straight away!
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    
+    
+    <h3> Ship To</h3>
+    <div> Name: @Html.EditorFor(c => c.Name) @Html.ValidationMessageFor(c =>c.Name)</div>
+     
+    <h3> Address Lines </h3>
+    //Note - each line surrounded by either text or div attrib - this is required by razor parsing  - div ensures new line
+    <text>Line1: @Html.EditorFor(c => c.Line1)</text>
+    <div> Line2: @Html.EditorFor(c => c.Line2)</div>
+    <div> Line3: @Html.EditorFor(c => c.Line3)</div>    
+    <div> City: @Html.EditorFor(c => c.City)</div>    
+    <div> State: @Html.EditorFor(c => c.State)</div>    
+    <div> Zip: @Html.EditorFor(c => c.Zip)</div>    
+    <div> Country: @Html.EditorFor(c => c.Country)</div>    
+    
+    <h3> Options </h3>
+    <label>
+        @Html.EditorFor(x=>x.GiftWrap)
+        Gift wrap these options
+    </label>    
+    
+    <p align="center">
+        <input class="actionButtons" type="submit" value="Complete order"/>
+    </p>
+    
+}
+
+@section CartSummary
+{
+@*    Nothing here - this replaces te default Basket option 
+*@
+}

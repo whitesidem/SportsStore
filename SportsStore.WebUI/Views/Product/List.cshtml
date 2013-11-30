@@ -1,0 +1,22 @@
+﻿@model SportsStore.WebUI.Models.ProductListViewModel
+
+@{
+    ViewBag.Title = "Your Products!";
+}
+
+@foreach (var product in Model.Products)
+{
+    Html.RenderPartial("ProductSummary", product);    
+    @*  @Html.Partial("ProductSummary",product)
+    Version above uses c# - This alt version using razor is slower as not rendered into repsonse stream -       *@}
+
+    <div class="pager">
+        @*
+            Action = List, 
+            URL is generated same way as in map route detailing route.
+            param page is created and set as the page integer value passed in from delegate call - delegate was func<int,string> - ie passed in int and returns string.
+            everything after x=> is the body content for our anonymous delegate instance, 
+            x is the param passed to the delgate by the client - which is the individual page numbers iterate through  in this case
+        *@
+        @Html.PageLinks(Model.PagingInfo, x => { return Url.Action("List", new {page = x, category = Model.CurrentCategory}); }) 
+    </div>
